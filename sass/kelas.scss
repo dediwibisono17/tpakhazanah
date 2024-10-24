@@ -1,0 +1,37 @@
+.kelas {
+    min-height: auto;
+    .cardx {
+        position: relative;
+        // background: #f9cfff;
+        padding: 8px;
+        border-radius: 8px;
+        &__class {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%) rotate(-2deg);
+            width: fit-content;
+            padding: 8px;
+            background: $color-secondary;
+            text-align: center;
+            border-radius: 16px;
+            .desc {
+                font-weight: 700;
+                font-size: 1.3rem;
+                // color: $color-primary;
+            }
+        }
+        &__img {
+            width: 240px;
+            margin: 0 auto;
+            height: 240px;
+            filter: drop-shadow(3px 2px 0px $color-primary);
+            img {
+                width: 100%;
+                border-radius: 50%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

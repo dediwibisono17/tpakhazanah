@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&display=swap");
+
+$color-primary: #490d59;
+// $color-secondary: #e8ae00;
+$color-secondary: #f8ca42;
+html,
+body {
+    font-family: "Fredoka", sans-serif;
+    overflow-x: clip;
+    // background: #f1f4f8;
+    background: #fdfbe8;
+    color: #141b22;
+}
+.bg-trans {
+    ol {
+        padding: 0;
+        margin: 16px 0;
+        background: #f1f4f8 !important;
+    }
+}
+section {
+    padding: 32px 0;
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Fredoka", sans-serif;
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: $color-primary;
+    }
+    p {
+        font-family: "Fredoka", sans-serif;
+        font-weight: 400;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    min-height: 100vh;
+}
+
+.wrap-pesantren {
+    width: 960px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.color {
+    &-primary {
+        color: $color-primary !important;
+    }
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    &:hover {
+        color: #fdfbe8 !important;
+    }
+    &-first {
+        background: $color-primary;
+        color: white;
+    }
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 16px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -16px;
+}
+.totop {
+    position: relative;
+    z-index: 20;
+}
+.sticky-mode {
+    position: sticky;
+    top: 85px;
+    z-index: 99;
+    // bottom: 0;
+    // min-height: 100vh;
+}
+
+.ismobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.isdesktop {
+    display: block;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.font {
+    &-bold {
+        font-weight: bold;
+    }
+}
+
+// "\f054"
+
+.slick-next,
+.slick-prev {
+    font-family: "Font Awesome 5 Pro" !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 4% !important;
+    @media screen and (max-width: 768px) {
+        right: 8% !important;
+    }
+}
+.slick-prev {
+    left: 1% !important;
+}
+
+.slick-next,
+.slick-prev {
+    &::before {
+        font-size: 50px !important;
+        @media screen and (max-width: 768px) {
+            font-size: 30px !important;
+        }
+    }
+}

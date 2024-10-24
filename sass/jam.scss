@@ -1,0 +1,93 @@
+.jam {
+    position: relative;
+    background: white;
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-top: 50px solid #fdfbe8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-bottom: 50px solid #fdfbe8;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &-help {
+        position: relative;
+        min-height: 100vh;
+        .jamx {
+            position: absolute;
+            left: 50%;
+            top: -10%;
+            transform: translate(-50%, 0%);
+            width: 70px;
+            text-align: center;
+            padding: 10px 0;
+            height: 70px;
+            border-radius: 50%;
+            background: #e8063c;
+            i {
+                font-size: 3rem;
+            }
+        }
+    }
+    &-block {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: white;
+        width: 100%;
+        padding: 16px;
+        border-radius: 16px 32px 32px 32px;
+        transform: translate(-50%, -50%);
+        // background: $color-primary;
+        background: #490d59;
+        h3 {
+            color: $color-secondary;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    ul {
+        margin: 16px 0;
+        padding: 0;
+        li {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin-bottom: 5px;
+            border-radius: 9999px;
+            padding: 11px 0;
+            transition: all ease 0.4s;
+            .hour,
+            .activity {
+                flex: 1;
+                font-size: 18px;
+                text-align: center;
+                // font-family: var(--title-font);
+                font-weight: 600;
+                // color: var(--title-color);
+                color: black;
+                line-height: 1.5;
+            }
+            .hour {
+                border-right: 1px solid #a7a7a7;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.galeri {
+    .gallery {
+        // display: flex;
+        padding: 2px;
+        transition: 0.3s;
+        display: block;
+        figure {
+            margin-bottom: 0;
+        }
+        // &:hover {
+        //     .gallery__image {
+        //         filter: grayscale(1);
+        //     }
+        // }
+        &__column {
+            // display: flex;
+            // flex-direction: column;
+            // display: inline-block;
+            // width: 45%;
+            display: block;
+        }
+        &__link {
+            margin: 2px;
+            display: inline-block;
+            width: 32%;
+            box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+            overflow: hidden;
+            @media screen and (max-width: 768px) {
+                width: 48%;
+            }
+            &:hover {
+                .gallery__image {
+                    filter: grayscale(0);
+                }
+                .gallery__caption {
+                    opacity: 1;
+                }
+            }
+        }
+        &__thumb {
+            position: relative;
+
+            &--odd {
+                height: 220px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &--even {
+                height: 220px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            img {
+                height: 100%;
+            }
+        }
+        &__image {
+            display: block;
+            width: 100%;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &__caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 25px 15px 15px;
+            width: 100%;
+            // font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: white;
+            opacity: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+            transition: 0.3s;
+        }
+    }
+}

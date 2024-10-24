@@ -1,0 +1,72 @@
+.sentra {
+    position: relative;
+    .bgbg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card-sentra {
+        border-radius: 16px;
+        // padding: 8px;
+        position: relative;
+        margin-bottom: 16px;
+        // width: 100;
+        .content {
+            position: absolute;
+            // border-radius: 0 0 16px 16px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // color: white;
+            padding: 8px;
+            // background: linear-gradient(to top, $color-primary, transparent);
+            background: $color-primary;
+            p {
+                color: white;
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 0;
+            }
+            h4 {
+                color: $color-secondary;
+                margin-bottom: 0;
+                font-weight: 500;
+                font-size: 1.5rem;
+                text-align: center;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .image {
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                    // border-radius: 24px 24px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                height: 225px;
+            }
+            img {
+                transition: 0.3s;
+                width: 100%;
+                border-radius: 24px 24px;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

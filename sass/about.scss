@@ -1,0 +1,6 @@
+.about {
+    min-height: auto;
+    @media screen and (max-width: 768px) {
+        padding: 72px 0 32px;
+    }
+}
