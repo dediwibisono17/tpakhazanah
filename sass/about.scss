@@ -3,4 +3,24 @@
     @media screen and (max-width: 768px) {
         padding: 72px 0 32px;
     }
+    .name {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .image {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: 150px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+            object-fit: cover;
+        }
+    }
 }

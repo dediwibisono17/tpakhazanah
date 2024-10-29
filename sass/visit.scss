@@ -2,6 +2,9 @@
     background: #59b2dc;
     // min-height: auto;
     position: relative;
+    @media screen and (max-width: 768px) {
+        min-height: 80vh;
+    }
     &-box {
         width: 520px;
         position: absolute;

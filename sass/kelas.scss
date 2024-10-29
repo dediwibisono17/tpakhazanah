@@ -1,5 +1,28 @@
 .kelas {
     min-height: auto;
+    .bg-atas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0.3;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            opacity: 0.8;
+            height: 26%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .cardx {
         position: relative;
         // background: #f9cfff;
