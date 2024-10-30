@@ -24,3 +24,25 @@
         }
     }
 }
+
+.whyus {
+    min-height: auto;
+    text-align: left;
+    ol {
+        display: block;
+        margin: 16px auto;
+        li {
+            width: 45%;
+            vertical-align: top;
+            padding: 8px;
+            margin: 0 auto;
+            display: inline-block;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}

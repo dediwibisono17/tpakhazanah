@@ -72,6 +72,17 @@ footer {
             text-align: center;
         }
     }
+    .d-block {
+        i {
+            color: $color-primary;
+        }
+        p {
+            display: inline-block;
+            margin-left: 8px;
+            width: 80%;
+            vertical-align: top;
+        }
+    }
     .alls {
         ul {
             list-style-type: none;
