@@ -17,10 +17,14 @@
 footer {
     // background: #59b2dc;
     min-height: auto;
-    background: #ffe5f6;
+    // background: #ffe5f6;
+    background: #b2e5ff;
     border-top: 3px solid $color-primary;
     padding: 32px 0;
     position: relative;
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
     h3 {
         font-size: 1.5rem;
     }
@@ -30,6 +34,7 @@ footer {
         @media screen and (max-width: 768px) {
             width: 135px;
             height: 135px;
+            margin: 0 auto 24px;
         }
         img {
             width: 100%;
@@ -75,6 +80,9 @@ footer {
     .d-block {
         i {
             color: $color-primary;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
         }
         p {
             display: inline-block;

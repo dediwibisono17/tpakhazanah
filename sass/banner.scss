@@ -54,7 +54,7 @@
                 // border: 1px solid white;
                 height: auto;
                 @media screen and (max-width: 768px) {
-                    width: 85%;
+                    width: 60%;
                     top: 30%;
                 }
                 img {
@@ -80,8 +80,8 @@
                 font-weight: bold;
                 text-shadow: 2px 2px black;
                 @media screen and (max-width: 768px) {
-                    font-size: 1.7rem;
-                    line-height: 2rem;
+                    font-size: 1rem;
+                    line-height: 1rem;
                     width: 100%;
                 }
             }

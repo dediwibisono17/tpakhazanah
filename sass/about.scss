@@ -31,6 +31,9 @@
     ol {
         display: block;
         margin: 16px auto;
+        @media screen and (max-width:768px) {
+            padding: 0;
+        }
         li {
             width: 45%;
             vertical-align: top;
