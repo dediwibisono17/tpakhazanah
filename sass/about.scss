@@ -7,6 +7,17 @@
         font-size: 1.3rem;
         font-weight: bold;
     }
+    .sam {
+        display: none;
+        
+        @media screen and (max-width:768px) {
+            text-align: center;
+            // padding-top: 16px;
+        }
+    }
+    .job {
+        margin-bottom: 16px;
+    }
     .image {
         width: 280px;
         height: 280px;
@@ -14,6 +25,8 @@
         @media screen and (max-width: 768px) {
             width: 100%;
             height: 150px;
+            text-align: center;
+            margin: 0 auto;
         }
         img {
             width: 100%;
